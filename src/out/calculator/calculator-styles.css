@@ -1,0 +1,173 @@
+/* Dark Theme for Scientific Calculator */
+
+.root {
+    -fx-background-color: #1e1e1e;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Display Styles */
+.display {
+    -fx-background-color: #2d2d30;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #3e3e42;
+    -fx-border-width: 2;
+    -fx-padding: 10;
+}
+
+.history-display {
+    -fx-background-color: #252526;
+    -fx-text-fill: #858585;
+    -fx-font-size: 16px;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #3e3e42;
+    -fx-border-width: 1;
+    -fx-padding: 5;
+}
+
+/* Button Base Style */
+.button {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+    -fx-font-weight: 600;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 6, 0, 0, 3);
+}
+
+.button:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Number Buttons */
+.number-button {
+    -fx-background-color: linear-gradient(to bottom, #3e3e42, #323236);
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #4e4e52;
+    -fx-border-width: 1;
+}
+
+.number-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #4e4e52, #424246);
+}
+
+.number-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #323236, #2e2e32);
+}
+
+/* Operator Buttons */
+.operator-button {
+    -fx-background-color: linear-gradient(to bottom, #ff9500, #e68600);
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #cc7700;
+    -fx-border-width: 1;
+}
+
+.operator-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ffaa33, #ff9500);
+}
+
+.operator-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #e68600, #cc7700);
+}
+
+/* Equals Button */
+.equals-button {
+    -fx-background-color: linear-gradient(to bottom, #34c759, #2fb34c);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;
+    -fx-border-color: #28a745;
+    -fx-border-width: 1;
+}
+
+.equals-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #3dd865, #34c759);
+}
+
+.equals-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2fb34c, #28a745);
+}
+
+/* Clear/Backspace Buttons */
+.clear-button {
+    -fx-background-color: linear-gradient(to bottom, #ff3b30, #e63029);
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #cc2820;
+    -fx-border-width: 1;
+}
+
+.clear-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff5549, #ff3b30);
+}
+
+.clear-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #e63029, #cc2820);
+}
+
+/* Function Buttons (sin, cos, tan, etc.) */
+.function-button {
+    -fx-background-color: linear-gradient(to bottom, #5e5ce6, #4e4cd4);
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #3e3cc4;
+    -fx-border-width: 1;
+    -fx-font-size: 14px;
+}
+
+.function-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #6e6cf6, #5e5ce6);
+}
+
+.function-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #4e4cd4, #3e3cc4);
+}
+
+/* History Panel */
+.history-title {
+    -fx-fill: #c0c0c0;
+    -fx-font-weight: bold;
+}
+
+.history-box {
+    -fx-background-color: #252526;
+    -fx-background-radius: 6;
+    -fx-border-color: #3e3e42;
+    -fx-border-radius: 6;
+    -fx-border-width: 1;
+}
+
+.history-scroll {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6;
+}
+
+.history-scroll .viewport {
+    -fx-background-color: transparent;
+}
+
+.history-scroll .scroll-bar {
+    -fx-background-color: #252526;
+}
+
+.history-scroll .scroll-bar .thumb {
+    -fx-background-color: #3e3e42;
+    -fx-background-radius: 4;
+}
+
+.history-scroll .scroll-bar .thumb:hover {
+    -fx-background-color: #4e4e52;
+}
+
+.history-item {
+    -fx-fill: #b0b0b0;
+    -fx-font-family: "Consolas", "Monaco", monospace;
+}
